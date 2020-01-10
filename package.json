@@ -1,7 +1,7 @@
 {
-  "name": "typescript-overnightjs-express-starter",
+  "name": "yr-grate",
   "version": "1.0.0",
-  "description": "This is the starting template for building a web app/api powered by Express using Typescript and OvernightJs",
+  "description": "Application to tell how great you are.",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
