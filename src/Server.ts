@@ -2,11 +2,11 @@ import { Server } from "@overnightjs/core";
 import * as bodyParser from "body-parser";
 import { GreatController } from "./controllers/GeatController";
 
-const IS_PROD = process.env.NODE_ENV === "production";
+const ENABLE_LOG = process.env.NODE_ENV !== "production";
 
 export default class MainServer extends Server {
   constructor() {
-    super(IS_PROD);
+    super(ENABLE_LOG);
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.urlencoded({ extended: true }));
     this.setupControllers();
